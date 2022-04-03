@@ -1,0 +1,200 @@
+@media (max-width: 1201px) {
+    .header {
+        .header-container {
+            .header-menu {
+                .menu-item {
+                    .menu-list {
+                        .menu-link {
+                            width: 100%;
+                            padding: 0 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main {
+        .main-container {
+            .music-grup-info {
+                .grup-info {
+                    width: 100%;
+                    margin: 0;
+                }
+                .grup-images {
+                    max-width: 80%;
+                }
+            }
+            .music-grup-discography {
+                .discography-icons-con {
+                    width: 80%;
+                    ul {
+                        li {
+                            max-width: 110px;
+                        }
+                    }
+                }
+                .discography-tracks-con {
+                    margin: 10px 0 0 0;
+                    width: 60%;
+                    min-width: 300px;
+                    max-width: 400px;
+                }
+            }
+        }
+    }
+    .footer {
+        .player {
+            .player-item {
+                .player-now-playing,
+                .player-now-playing+div,
+                .player-add,
+                .player-add+div {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .header {
+        .header-container {
+            margin: 0 1.2% 0 10px;
+            transition: 0.2s;
+            width: 100%;
+            .header-menu {
+                .menu-item {
+                    .menu-list {
+                        .menu-link {
+                            padding: 0 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main {
+        width: calc(100% - 26px);
+        margin: 22px 0 0 10px;
+        transition: 0.2s;
+        .main-container {
+            .music-grup-info {
+                .grup-images {
+                    min-width: 100%;
+                }
+            }
+            .music-grup-discography {
+                .discography-icons-con {
+                    width: 100%;
+                    min-width: auto;
+                    ul {
+                        li {
+                            min-width: 90px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sidebar {
+        background: linear-gradient( 180deg, rgba(66, 66, 66, 1) 50%, rgba(43, 43, 43, 1) 100%);
+        left: -268px;
+        transition: left 0.2s;
+        &:hover {
+            left: 0;
+        }
+    }
+    .footer {
+        .player {
+            .player-item {
+                .player-volume {
+                    position: relative;
+                    &:hover div:nth-child(2) {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 15px;
+                        border-radius: 7px;
+                        transform: rotate(-90deg);
+                        width: 140%;
+                        height: 15px;
+                        background: #1d1d1d;
+                        position: absolute;
+                        top: -40px;
+                        left: -10px;
+                    }
+                }
+                .player-volume div:first-child,
+                .player-volume div:nth-child(2),
+                .player-buttons:nth-child(7),
+                .player-buttons:nth-child(7)+div {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 426px) {
+    .main {
+        .main-container {
+            .music-grup-title {
+                height: auto;
+                font-size: 24px;
+            }
+        }
+    }
+    .footer {
+        .player {
+            width: 100%;
+            margin: 15px 0 0 0;
+            .player-item {
+                .player-volume {
+                    &,
+                    &+div {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 321px) {
+    .header {
+        .header-container {
+            .header-user {
+                .user-logout-link {
+                    display: none;
+                }
+                &:hover>a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: rgba(66, 66, 66, 1);
+                    position: absolute;
+                    top: 20px;
+                    left: 0;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    .footer {
+        .player {
+            .player-item {
+                .player-load {
+                    div {
+                        p {
+                            position: relative;
+                            right: 10px;
+                        }
+                        input {
+                            width: calc(100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
